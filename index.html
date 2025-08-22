@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="calc">
+    <div id="display" class="display">0</div>
+    <div class="keys">
+      <button onclick="clearAll()">AC</button>
+      <button onclick="del()">DEL</button>
+      <button onclick="btn()">+/-</button>
+      <button class="op" onclick="chooseOp('/')">÷</button>
+      <button onclick="appendNum('7')">7</button>
+      <button onclick="appendNum('8')">8</button>
+      <button onclick="appendNum('9')">9</button>
+      <button class="op" onclick="chooseOp('*')">×</button>
+      <button onclick="appendNum('4')">4</button>
+      <button onclick="appendNum('5')">5</button>
+      <button onclick="appendNum('6')">6</button>
+      <button class="op" onclick="chooseOp('-')">−</button>
+      <button onclick="appendNum('1')">1</button>
+      <button onclick="appendNum('2')">2</button>
+      <button onclick="appendNum('3')">3</button>
+      <button class="op" onclick="chooseOp('+')">+</button>
+      <button onclick="appendNum('0')">0</button>
+      <button onclick="appendDot()">.</button>
+      <button class="eq" onclick="compute()">=</button>
+    </div>
+  </div>
+
+  <script src="demo.js"></script>
+</body>
+</html>
